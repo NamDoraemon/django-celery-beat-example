@@ -32,7 +32,7 @@ This does not reflect :(  -> The result is 3 yet.
 
 But `celerybeat` is received `Schedule changed` and start `Writing entries`
 
-```pyton
+```python
 >>> task = PeriodicTask.objects.get(name='simple-add')
 >>> task.args = '[43, 12]'
 >>> task.save()
@@ -42,7 +42,7 @@ Restarting `celerybeat`, it reflects. But restarting to reflect this is not usef
 
 ### Delete
 This reflects correctly :) -> No result. No fired in `celerybeat`.
-```pyton
+```python
 >>> task = PeriodicTask.objects.get(name='simple-add')
 >>> task.delete()
 ```
