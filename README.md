@@ -1,7 +1,7 @@
 # django-celery-beat-example
 
 ## Warnings
-**This example does not work intentionally.**
+**This example does not work as intended.**
 
 ## Requirements (Must)
 - rabbitmq <- (Using as `broker` and `backend_result`)
