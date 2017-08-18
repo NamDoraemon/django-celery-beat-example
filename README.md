@@ -40,6 +40,13 @@ But `celerybeat` is received `Schedule changed` and start `Writing entries`
 
 Restarting `celerybeat`, it reflects. But restarting to reflect this is not useful.
 
+```python
+>>> from django_celery_beat.models import PeriodicTasks
+>>> PeriodicTasks.changed(task)
+```
+
+Of course, it does not work either.
+
 ### Delete
 This reflects correctly :) -> No result. No fired in `celerybeat`.
 ```python
