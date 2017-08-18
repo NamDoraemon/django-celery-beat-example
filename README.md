@@ -45,7 +45,7 @@ Restarting `celerybeat`, it reflects. But restarting to reflect this is not usef
 >>> PeriodicTasks.changed(task)
 ```
 
-Of course, it does not work either.
+Of course, the above does not work either.
 
 ### Delete
 This reflects correctly :) -> No result. No fired in `celerybeat`.
